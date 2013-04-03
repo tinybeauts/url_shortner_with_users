@@ -1,0 +1,18 @@
+  <div class="header">
+    <div class="head_text">
+      <h1>Welcome to bitly</h1>
+    </div>
+  </div>
+
+<div class="form_container">
+  <form method="post" action="/urls">
+  <input type ="text" name="url" placeholder="enter your URL"> 
+  <input class = "input_button" type= "submit"> 
+  </form>
+</div>
+
+<div class="link_container">
+  <h1>Here is your link!</h1>
+  <span><a href='/<%= @key %>'>localhost:9393/<%= @key %></a></span>
+  <br/>
+</div>
