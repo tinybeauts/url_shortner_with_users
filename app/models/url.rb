@@ -3,6 +3,7 @@ require 'open-uri'
 require 'net/http'
 
 class Url < ActiveRecord::Base
+  
   before_create  :make_key
   validates :check_url, :numericality => {:greater_than_or_equal_to => 200, :less_than_or_equal_to => 400}
   # validates :check_db

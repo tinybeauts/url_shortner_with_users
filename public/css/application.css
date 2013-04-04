@@ -46,7 +46,17 @@ th {
   width: 600px;
   padding: 20px 20px 20px 20px;
   border-radius: 5px;
-  border: solid 3px rgb(46, 204, 113)
+  border: solid 3px rgb(46, 204, 113);
+  background-color: rgb(46, 204, 113);
+
+}
+
+.link_container2 {
+  margin: 20px auto;
+  width: 600px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 5px;
+  border: solid 3px rgb(46, 204, 113);
 }
 
 .form_container {

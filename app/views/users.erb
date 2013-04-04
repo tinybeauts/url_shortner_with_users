@@ -1,0 +1,31 @@
+  <div class="header">
+    <div class="head_text">
+      <h1>Welcome to bitly</h1>
+    </div>
+  </div>
+
+<div class="form_container">
+  <form method="post" action="/urls">
+  <input type ="text" name="url" placeholder="enter your URL"> 
+  <input class = "input_button" type= "submit"> 
+  </form>
+</div>
+
+<div class="link_container2">
+  <h1>Here is your link!</h1>
+  <span><a href='/<%= @key %>'>localhost:9393/<%= @key %></a></span>
+  <br/>
+</div>
+
+<div class="all_the_links">
+  <h2>Here are all your links</h2>
+  <ul>
+    <% @all_links.each do |link| %>
+    <li><%=link%></li>
+    <% end %>
+  </ul>
+</div>
+
+<div class="logout">
+  <a href="/logout">LOGOUT MUTHAFUCKA</a>
+</div>
