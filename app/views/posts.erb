@@ -12,8 +12,24 @@
 </div>
 
 <div class="link_container2">
-  <h1>Here is your link!</h1>
-  <span><a href='/<%= @key %>'>localhost:9393/<%= @key %></a></span>
+  <div class="link_box_info">
+    <h1>Here is your link!</h1>
+    <span><a href='/<%= @key %>'>localhost:9393/<%= @key %></a></span>
+  </div>
   <br/>
+</div>
+
+
+<div class="link_list">
+  <h2>Here are all your links</h2>
+  <ul>
+    <% @all_links.each do |link| %>
+    <li><%=link%></li>
+    <% end %>
+  </ul>
+</div>
+
+<div class="logout">
+  <a href="/logout">LOGOUT MUTHAFUCKA</a>
 </div>
 

@@ -35,15 +35,14 @@ input {
   margin: 20px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
-  text-align: center;
 }
 th {
   text-align: left;
 }
 
 .link_container {
-  margin: 20px auto;
   width: 600px;
+  margin: 30px;
   padding: 20px 20px 20px 20px;
   border-radius: 5px;
   border: solid 3px rgb(46, 204, 113);
@@ -51,21 +50,78 @@ th {
 
 }
 
+.link_box_info {
+  width: 300px;
+  height: 70px;
+  background-color: white;
+  margin-left: 140px;
+  color: #7F8C8D;
+  border-radius: 7px;
+  text-align: center;
+
+}
+
 .link_container2 {
-  margin: 20px auto;
+  margin: 30px;
   width: 600px;
   padding: 20px 20px 20px 20px;
   border-radius: 5px;
-  border: solid 3px rgb(46, 204, 113);
+  background-color: #F1C40F;
+
+}
+
+.link_container2 a {
+color: #3498DB;
+font-family: "ARIAL BLACK"  ; ;
+text-decoration: none;
 }
 
 .form_container {
-  margin: 20px auto;
+  position: relative;
+  margin: 30px;
   width: 600px;
   padding: 20px 20px 20px 20px;
   background-color: rgb(149, 165, 166);
   border-radius: 5px;
 
+}
+
+.link_list {
+  margin: 30px;
+  width: 300px;
+  height: 70px;
+  background-color: #34495e;
+  color: white;
+  border-radius: 7px;
+}
+
+.link_list li {
+  list-style: none;
+  text-align: left;
+  color: white;
+}
+
+.logout {
+  width: 200px;
+  height: 30px;
+  background-color: #e74c3c;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 30px;  
+
+
+}
+
+.logout a {
+  font-family: "arial black";
+  text-decoration: none;
+  color: white;  
+}
+
+.logout a:hover {
+  font-family: "arial black";
+  text-decoration: none;
+  color: gray;
 }
 
 

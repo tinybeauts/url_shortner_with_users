@@ -16,12 +16,22 @@ end
 post '/urls' do
 
   @url_name = params[:url]
-  @new_url = Url.create(:url => params[:url], :counter => 0)
-  @key = @new_url.key
+
+  
   if session["user"] != nil
-     erb :posts
+
+    @user = User.where('email = ?', session["user"]).first
+    @user_id = @user.id
+    @all_urls = @user.urls
+    @new_url = Url.create(:url => params[:url], :counter => 0, :user_id => @user_id)
+    @key = @new_url.key
+    @all_links = @all_urls.map { |my_url| my_url.url }
+
+    erb :posts
   else
-     erb :login_posts 
+    @new_url = Url.create(:url => params[:url], :counter => 0)
+    @key = @new_url.key
+    erb :login_posts 
   end
 end
 
